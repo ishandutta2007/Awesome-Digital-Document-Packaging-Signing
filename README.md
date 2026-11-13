@@ -1,71 +1,110 @@
-# Awesome-Digital-Document-Packaging-Signing
+# Awesome Digital Document Packaging & Signing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top Digital Document Packaging & Signing Ecosystem
+> A curated list of exceptional SaaS platforms, open-source e-signature engines, and cryptographic PDF packaging tools with tamper-evident audit trails and PAdES/eIDAS compliance.
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on E-Signature Workflows, PDF Envelope Packaging & Tamper-Evident Audit Trails*  
-**Last updated: March 2026**
+[![E-Signature](https://img.shields.io/badge/E--Signature-Ecosystem-blue.svg)](https://github.com/ishandutta2007/Awesome-Digital-Document-Packaging-Signing)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Digital-Document-Packaging-Signing/pulls)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Digital Document Packaging & Signing**. These tools help organizations send documents for legally binding electronic signatures—covering envelope creation, field placement, signer authentication, audit trails, and the cryptographic sealing of completed PDFs.
-
-**Examples** include DocuSign, Adobe Acrobat Sign, PandaDoc, Dropbox Sign, OneSpan Sign, DocuSeal, Documenso, and OpenSign (the category leaders).
-
-**Open-source emphasis**: This section highlights every major active project for self-hosted e-signature workflows, open-source PDF signing engines, and community-driven document packaging—ideal for developers embedding signing into their own products and organizations seeking data sovereignty over per-envelope SaaS pricing. The open-source landscape is genuinely mature: **DocuSeal** leads with 18,000+ stars and a Docker-ready stack , **Documenso** offers a modern Next.js/TypeScript alternative , and **OpenSign** provides a Node.js/MongoDB option with audit trails .
-
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[DocuSign](https://www.docusign.com/)** | Industry-standard e-signature platform with envelopes, templates, audit trails, and certificate of completion on every agreement. **Per-user pricing with envelope caps** on lower tiers; overages billed per envelope ($3.60–$7.80) or pre-purchased ($3.00–$6.50). SMS delivery and ID verification are paid add-ons . | Personal: $11/month (5 envelopes); Standard: ~$25/user/month (100 envelopes/user/year)  | No permanent free tier; 30-day money-back on annual plans . Envelope overages and add-ons billed separately . |
-| **[Adobe Acrobat Sign](https://www.adobe.com/sign.html)** | E-signature bundled into Acrobat plans. **Per-license billing** (you pay for seats even if unused); team tiers $16.99–$29.99/user/month on annual contracts with **150 signature transactions per user per year** cap . | Standard: $14.99/month (individual); Teams: $23.99–$29.99/user/month  | No free plan; free trials vary by tier. **DOJ settlement (March 2026) required upfront disclosure of termination fees** . |
-| **[PandaDoc](https://www.pandadoc.com/)** | Document workflow platform combining e-signature, proposals, and CPQ. Free eSign plan: **5 documents/month, 2 recipients/document**. Paid plans add unlimited documents, templates, and CRM integrations . | Free: $0 (5 docs/month); Starter: $19/user/month (annual); Business: $49/user/month  | **Free eSign**: 5 documents/month, 2 recipients each, 5 templates, limited API . **14-day trial** with up to 50 documents . |
-| **[Dropbox Sign](https://sign.dropbox.com/)** | E-signature platform (formerly HelloSign) with **unlimited signature requests on all paid per-seat plans**—no envelope caps or overage fees. Integrates with Dropbox, Google Drive, and OneDrive. | From $15/user/month (annual, $180/year)  | Free tier available with low limits (evaluation only); API: $75/50 requests/month (annual) . |
-| **[OneSpan Sign](https://www.onespan.com/)** | Enterprise e-signature with transaction-based or user-based pricing. **Professional: $22/user/month** (annual) with unlimited templates and transactions. **Developer Sandbox: free, no expiration**, enterprise features enabled . | Professional: $22/user/month (annual); Enterprise: custom (user or transaction volume)  | **Free 30-day trial**; **free unlimited developer sandbox** . |
-| **[SignNow](https://www.signnow.com/)** | E-signature platform positioned as a lower-cost alternative to Adobe. Business Premium: **$15/user/month** (annual) with unlimited documents and templates. | Business Premium: $15/user/month (annual)  | Free trial available; no permanent free tier |
-
-## Open-Source GitHub Projects
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[DocuSeal](https://github.com/docusealco/docuseal)** | [![Stars](https://img.shields.io/github/stars/docusealco/docuseal?style=social&color=white)](https://github.com/docusealco/docuseal/stargazers) | **The leading open-source e-signature platform and #1 DocuSign alternative.** 18,331 stars (August 2026), AGPL-3.0, Ruby on Rails 7 + PostgreSQL. Visual PDF drag-and-drop field builder, embedded signing via JS/React web component, automated reminders, and **tamper-evident audit certificate**. **Free Community Edition: unlimited envelopes and seats**; Pro adds API and embedding. Docker Compose deployment (PostgreSQL + MinIO/S3). **~250 MB RAM footprint** . |
-| **[Documenso](https://github.com/documenso/documenso)** | [![Stars](https://img.shields.io/github/stars/documenso/documenso?style=social&color=white)](https://github.com/documenso/documenso/stargazers) | **The modern TypeScript/Next.js e-signature platform—"Stripe for Signatures."** 14,664 stars (August 2026), AGPL-3.0. Advanced multi-party signing order, **passkey signing authentication**, SHA-256 hash + audit log, and deep API integrations for developer platforms. Embedded signing via React component and REST API. **~400 MB RAM footprint**. Free tier: 5 documents/month; Teams ($40/mo for 5 users) adds embedded signing . |
-| **[OpenSign](https://github.com/OpenSignLabs/OpenSign)** | [![Stars](https://img.shields.io/github/stars/OpenSignLabs/OpenSign?style=social&color=white)](https://github.com/OpenSignLabs/OpenSign/stargazers) | **Node.js/MongoDB e-signature with full document lifecycle management.** 6,896 stars (August 2026). **AGPL-3.0 with carve-outs** (check LICENSE for commercial use). Cryptographic signing, **detailed audit trails with IP tracking**, completion certificates, REST API, multi-device support, and drive functionality. Freemium model. **~350 MB RAM footprint** . |
-| **[Penpact](https://github.com/penpact/penpact)** | [![Stars](https://img.shields.io/github/stars/penpact/penpact?style=social&color=white)](https://github.com/penpact/penpact/stargazers) | **Developer-first e-signature API to embed signing in your own product.** AGPL-3.0, self-hosted or cloud. **Early development (v0.1.0)**—signing engine works end-to-end but API is not yet stable. Features: **AI field detection** (Claude/Gemini/GPT proposes fields), in-document signing with themeable React component, typed SDK (`@penpact/sdk`), append-only audit trail with IP/timestamps, **PAdES digital signature** on sealed PDF, Certificate of Completion, templates, bulk send, and HMAC-signed webhooks. **No per-seat billing**; free forever when self-hosted . |
-
-### Additional Strong Open-Source Options
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[LibreSign](https://github.com/LibreSign/libresign)** | [![Stars](https://img.shields.io/github/stars/LibreSign/libresign?style=social&color=white)](https://github.com/LibreSign/libresign/stargazers) | **Nextcloud-integrated e-signature.** 790 stars (August 2026), AGPL-3.0, PHP/JavaScript. Sign documents online with security and agility directly within your Nextcloud instance. **Best for organizations already on Nextcloud** wanting native signing without a separate platform . |
-| **[esig/dss](https://github.com/esig/dss)** | [![Stars](https://img.shields.io/github/stars/esig/dss?style=social&color=white)](https://github.com/esig/dss/stargazers) | **EU Digital Signature Service library (LGPL-2.1).** 1,025 stars (August 2026). A signing library and server—not a finished product. Implements eIDAS-compliant advanced and qualified electronic signatures. **Best for developers needing to build custom EU-compliant signing workflows** rather than a turnkey platform . |
-| **[Keyfactor SignServer CE](https://github.com/Keyfactor/signserver-ce)** | [![Stars](https://img.shields.io/github/stars/Keyfactor/signserver-ce?style=social&color=white)](https://github.com/Keyfactor/signserver-ce/stargazers) | **LGPL-2.1 signing server** (431 stars). Enterprise-grade cryptographic signing for PDFs and documents. **Last commit January 2026**—slower cadence than active projects. Best for organizations needing a hardened signing backend rather than a full e-signature UI . |
-
-**Frameworks for building custom systems**: Choose **DocuSeal** for the most mature turnkey self-hosted e-signature platform with visual field builder and unlimited envelopes , **Documenso** for a TypeScript-native stack with passkey authentication and multi-party ordering , or **OpenSign** for a Node.js/MongoDB alternative with detailed IP-tracked audit trails . For embedding signing directly into your product, **Penpact** provides a developer-first API with AI field detection—but note it is **early-stage (v0.1.0)** and not yet production-stable . For EU qualified signatures, **esig/dss** provides the cryptographic library foundation.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- E-signature platforms handle legally binding agreements and signer PII; ensure compliance with ESIGN, UETA, eIDAS, and applicable data protection regulations. **Audit trails and certificate integrity are legally critical**—do not deploy open-source signing without validating the tamper-evidence of completed PDFs.
-- **Open-source e-signature licensing is exclusively copyleft.** Every actively maintained project is AGPL-3.0 or LGPL-2.1—**no permissive (MIT/Apache) option exists** . If your organization restricts copyleft software, these projects may not be viable for embedding in proprietary products. **DocuSeal** is AGPL-3.0 with Pro paid tiers for API/embedding . **Documenso** is AGPL-3.0 . **OpenSign** is AGPL-3.0 **with carve-outs**—review the LICENSE carefully before commercial use . **Penpact** is AGPL-3.0 and **v0.1.0 early development**—the README explicitly states it is not yet stable . **Commercial platforms have hidden costs**: Adobe's annual contracts carry **early termination fees** and a **150-transaction/user/year cap** (DOJ settlement March 2026 required upfront disclosure) . DocuSign's envelope overages range **$3.60–$7.80 per envelope** . Dropbox Sign is the notable exception with **unlimited sends on paid plans** .
+Digital document packaging and signing technologies enable organizations to prepare, dispatch, and execute legally binding electronic agreements. This ecosystem encompasses visual envelope and drag-and-drop field builders, multi-party signing order, signer identity verification, cryptographic digital signature sealing (such as PAdES, XAdES, CAdES), and tamper-evident audit trails.
 
 ---
 
-**Made for developers, legal ops teams, and organizations building document signing infrastructure.**  
-Let's make digital document packaging and signing more open, verifiable, and accessible.
+## Table of Contents
+
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS / Hosted Platforms](#saas--hosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+  - [Turnkey E-Signature Applications](#turnkey-e-signature-applications)
+  - [Cryptographic Libraries & Signing Utilities](#cryptographic-libraries--signing-utilities)
+- [Developer & Architectural Selection Guide](#developer--architectural-selection-guide)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer & Legal Notes](#disclaimer--legal-notes)
+
+---
+
+## Sector Overview & Market Dynamics
+
+The global digital signature and e-signature market is valued between **$8.5 billion and $17.5 billion**, expanding at an aggressive Compound Annual Growth Rate (CAGR) of **22% to 35%** into the 2030s. Structurally, the sector has transitioned from a highly concentrated monopoly dominated by DocuSign and Adobe Acrobat Sign into a **moderately fragmented** ecosystem, driven by unbundling, open-source self-hosted alternatives, API-first embedding, and regional Qualified Trust Service Provider (QTSP) compliance mandates (such as eIDAS 2.0 in the EU).
+
+---
+
+## SaaS / Hosted Platforms
+
+*Commercial e-signature and document packaging platforms sorted by company scale (market capitalization / valuation in descending order).*
+
+| Product | Scale (Valuation / Revenue) | Starting Pricing Tier | Free Tier / Trial Limits | Description |
+|---|---|---|---|---|
+| **[Adobe Acrobat Sign](https://www.adobe.com/sign.html)** | **~$93 Billion** Market Cap (~$26B Revenue) | **$14.99/month** (Acrobat Standard, single user) or **$23.99/user/month** (Teams, billed annually) | **30-day free trial** with standard testing allowances; no permanent free sending tier (150 transactions/user/year cap on standard plans; upfront disclosure of termination fees) | Enterprise-grade document cloud integrating PDF editing, envelope workflows, and legally binding e-signatures. Bundled into Acrobat subscription tiers. |
+| **[DocuSign](https://www.docusign.com/)** | **~$15 Billion** Market Cap (~$3.36B Revenue) | **$10/month** (Personal plan, billed annually; 5 envelopes/month cap) or **$25/user/month** (Standard plan) | **30-day free trial** (capped at 5 envelope sends total, max 5 recipients/envelope); standard free account allows unlimited signing but **0 sends** | The market-share category leader in electronic signature and Intelligent Agreement Management (IAM), featuring advanced recipient authentication, custom envelope templates, and completion certificates. |
+| **[Dropbox Sign](https://sign.dropbox.com/)** | **~$7.2 Billion** Market Cap (~$2.53B Revenue) | **$15/month** (Essentials plan, 1 user, billed annually at $180/year) | **Free plan: 3 signature requests per month** (renews every 30 days; self-signing is unlimited); 30-day free trial for paid plans | Formerly HelloSign; developer-friendly signature platform offering **unlimited signature requests** on paid plans without per-envelope surprise overages. |
+| **[signNow](https://www.signnow.com/)** | **~$1.25 Billion** Valuation (airSlate parent; ~$200M ARR, ~$35M signNow) | **$8/user/month** (Business plan, billed annually at $96/year) or **$15/user/month** (Business Premium) | **7-day free trial** with full feature evaluation (standard paid plans allocate 100 signature invites/user/year); no permanent free sending tier | Cost-effective cloud e-signature platform built under airSlate, providing visual field assignment, reusable templates, automated team reminders, and mobile signing. |
+| **[PandaDoc](https://www.pandadoc.com/)** | **~$1.0 Billion** Valuation (~$100M ARR) | **$19/user/month** (Starter plan, billed annually) or **$49/user/month** (Business plan) | **Free eSign plan: 5 documents/month**, 2 recipients/document, 5 templates; **14-day free trial** for Business tier with up to 50 documents | Document automation and CPQ platform streamlining document generation, interactive quote proposals, payment capture, and digital signing in one canvas. |
+| **[OneSpan Sign](https://www.onespan.com/)** | **~$850 Million** Market Cap (~$243M Revenue) | **$20/user/month** (Professional plan, billed annually) or custom volume transaction pricing | **30-day free trial** with full platform capabilities; **permanently free unlimited developer sandbox** (watermarked/non-production test transactions) | High-assurance digital signature platform focused on regulated banking, healthcare, and enterprise environments requiring strict audit integrity and white-labeling. |
+
+---
+
+## Open-Source GitHub Projects
+
+*Open-source self-hosted e-signature platforms, signing servers, and cryptographic libraries sorted by GitHub stargazer count (descending).*
+
+### Turnkey E-Signature Applications
+
+| Project | Stars | License | Tech Stack | Key Capabilities |
+|---|---|---|---|---|
+| **[DocuSeal](https://github.com/docusealco/docuseal)** | [![Stars](https://img.shields.io/github/stars/docusealco/docuseal?style=social&color=white)](https://github.com/docusealco/docuseal/stargazers) | AGPL-3.0 | Ruby on Rails 7, PostgreSQL, MinIO | Leading turnkey open-source DocuSign alternative. Features intuitive PDF drag-and-drop form builders, embeddable JS/React signing widgets, automated email/SMS reminders, unlimited envelopes/users in Community Edition, and tamper-evident audit certificates (~250 MB RAM footprint). |
+| **[Documenso](https://github.com/documenso/documenso)** | [![Stars](https://img.shields.io/github/stars/documenso/documenso?style=social&color=white)](https://github.com/documenso/documenso/stargazers) | AGPL-3.0 | TypeScript, Next.js, Prisma, Tailwind | Modern "Stripe for Signatures" web platform. Supports sequential and parallel signing orders, passkey/WebAuthn signing authentication, SHA-256 cryptographic audit logs, and embeddable React components via full REST API. |
+| **[OpenSign](https://github.com/OpenSignLabs/OpenSign)** | [![Stars](https://img.shields.io/github/stars/OpenSignLabs/OpenSign?style=social&color=white)](https://github.com/OpenSignLabs/OpenSign/stargazers) | AGPL-3.0 (with carve-outs) | Node.js, Express, MongoDB, React | Free & open-source agreement management platform offering cryptographic signing, IP-tracked audit trails, PDF completion certificates, multi-tenant workspace drive management, and comprehensive REST APIs. |
+| **[LibreSign](https://github.com/LibreSign/libresign)** | [![Stars](https://img.shields.io/github/stars/LibreSign/libresign?style=social&color=white)](https://github.com/LibreSign/libresign/stargazers) | AGPL-3.0 | PHP, Vue.js, Nextcloud | Fully integrated e-signature suite for Nextcloud deployments. Ideal for organizations seeking self-hosted private cloud storage with native in-place document signing without external cloud dependencies. |
+| **[Penpact](https://github.com/penpact/penpact)** | [![Stars](https://img.shields.io/github/stars/penpact/penpact?style=social&color=white)](https://github.com/penpact/penpact/stargazers) | AGPL-3.0 | TypeScript, React, Node.js | Developer-first embedded e-signature framework (early v0.1.0 development). Features AI field detection, themeable React client SDK (`@penpact/sdk`), append-only audit trail with IP/timestamps, PAdES digital signature sealing, and HMAC webhook dispatching. |
+
+### Cryptographic Libraries & Signing Utilities
+
+| Project | Stars | License | Language / Runtime | Focus & Architecture |
+|---|---|---|---|---|
+| **[esig/dss](https://github.com/esig/dss)** | [![Stars](https://img.shields.io/github/stars/esig/dss?style=social&color=white)](https://github.com/esig/dss/stargazers) | LGPL-2.1 | Java | European Commission Digital Signature Service (DSS). Definitive reference implementation for creating, extending, and validating advanced & qualified electronic signatures compliant with eIDAS (PAdES, CAdES, XAdES, ASiC). |
+| **[open-pdf-sign](https://github.com/open-pdf-sign/open-pdf-sign)** | [![Stars](https://img.shields.io/github/stars/open-pdf-sign/open-pdf-sign?style=social&color=white)](https://github.com/open-pdf-sign/open-pdf-sign/stargazers) | Apache-2.0 | Java / CLI | Lightweight standalone command-line application and server to digitally sign PDF files with X.509 certificates, hardware security modules (HSM via PKCS#11), smart cards, and RFC 3161 timestamps. |
+| **[node-signpdf](https://github.com/vbuch/node-signpdf)** | [![Stars](https://img.shields.io/github/stars/vbuch/node-signpdf?style=social&color=white)](https://github.com/vbuch/node-signpdf/stargazers) | MIT | Node.js / JavaScript | Simple, dependency-light library for injecting cryptographic byte-range signatures into PDF files natively in Node.js environments. |
+| **[pyHanko](https://github.com/MatthiasValvekens/pyHanko)** | [![Stars](https://img.shields.io/github/stars/MatthiasValvekens/pyHanko?style=social&color=white)](https://github.com/MatthiasValvekens/pyHanko/stargazers) | MIT | Python | Advanced Python library and CLI tool for digital PDF signatures and document timestamping. Native support for PAdES-B-B, PAdES-B-T, and PAdES-B-LTA profiles, cryptographic hardware tokens (PKCS#11), and Long-Term Validation (LTV). |
+| **[Keyfactor SignServer CE](https://github.com/Keyfactor/signserver-ce)** | [![Stars](https://img.shields.io/github/stars/Keyfactor/signserver-ce?style=social&color=white)](https://github.com/Keyfactor/signserver-ce/stargazers) | LGPL-2.1 | Java | Enterprise PKI signing server facilitating centralized, automated cryptographic signing of documents (PDF, XML, Office), code signing, and server-side digital timestamping. |
+| **[digitorus/pdfsign](https://github.com/digitorus/pdfsign)** | [![Stars](https://img.shields.io/github/stars/digitorus/pdfsign?style=social&color=white)](https://github.com/digitorus/pdfsign/stargazers) | BSD-2-Clause | Go | Pure Go library to add and verify Advanced Electronic Signatures (AES) and Qualified Electronic Signatures (QES) inside PDF files, supporting PKCS#7/CMS signatures, visual signature appearances, and timestamp authorities. |
+
+---
+
+## Developer & Architectural Selection Guide
+
+- **Turnkey Self-Hosted Web Apps**:
+  - Deploy **[DocuSeal](https://github.com/docusealco/docuseal)** for the fastest Docker-compose setup, lowest memory overhead (~250 MB), and unlimited envelopes/users.
+  - Deploy **[Documenso](https://github.com/documenso/documenso)** if your engineering stack is TypeScript/Next.js and you require passkey-based signature authentication.
+  - Deploy **[OpenSign](https://github.com/OpenSignLabs/OpenSign)** for Node.js/MongoDB environments wanting fine-grained IP tracking audit trails.
+- **Embedded Signing & APIs**:
+  - Integrate **[Dropbox Sign](https://sign.dropbox.com/)** or **[DocuSeal Pro](https://www.docuseal.com/)** for mature drop-in web components without per-seat surprises.
+  - Explore **[Penpact](https://github.com/penpact/penpact)** for early-stage prototype development with AI-suggested field positioning.
+- **Cryptographic PDF Sealing & eIDAS / PAdES Compliance**:
+  - Use **[esig/dss](https://github.com/esig/dss)** (Java) for European eIDAS QES/AES compliance.
+  - Use **[pyHanko](https://github.com/MatthiasValvekens/pyHanko)** (Python) for automated PAdES-LTA long-term validation and timestamping pipelines.
+  - Use **[open-pdf-sign](https://github.com/open-pdf-sign/open-pdf-sign)** or **[node-signpdf](https://github.com/vbuch/node-signpdf)** for automated backend document stamping and CI/CD pipelines.
+
+---
+
+## How to Contribute
+
+1. Fork the repository.
+2. Add your SaaS product or open-source repository following the table format.
+3. Ensure you provide:
+   - For SaaS: starting tier pricing, free tier/trial limits, company scale, and accurate descriptions.
+   - For Open Source: valid GitHub URL, Stargazer badge (`style=social&color=white`) linked to the stargazer page, SPDX license, tech stack, and architectural summary.
+4. Verify alphabetical or metric sorting where applicable.
+5. Submit a Pull Request with a clear description of changes.
+
+---
+
+## Disclaimer & Legal Notes
+
+- This repository is a community-curated educational resource and does not constitute formal legal counsel.
+- Electronic signatures are governed by legal frameworks such as the **United States ESIGN Act (15 U.S.C. ch. 96)**, **UETA**, and the **European Union eIDAS Regulation (Regulation (EU) No 910/2014)**.
+- Cryptographic integrity, non-repudiation, tamper evidence, and secure audit trail preservation are critical requirements. When implementing self-hosted solutions, verify X.509 certificate trust anchors, PDF byte-range cryptographic seals, and timestamp authority (TSA) configurations.
+
+---
+
+*Maintained by the open-source community. Star this repository to keep track of developments in digital document packaging and cryptographic signing!*
