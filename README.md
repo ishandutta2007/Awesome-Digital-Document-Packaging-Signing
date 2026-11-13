@@ -1,39 +1,49 @@
-# Awesome Digital Document Packaging & Signing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Digital Document Packaging &amp; Signing Banner" width="100%" />
+</p>
 
-> A curated list of exceptional SaaS platforms, open-source e-signature engines, and cryptographic PDF packaging tools with tamper-evident audit trails and PAdES/eIDAS compliance.
+# 📑 Awesome Digital Document Packaging & Signing [![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
 
-[![E-Signature](https://img.shields.io/badge/E--Signature-Ecosystem-blue.svg)](https://github.com/ishandutta2007/Awesome-Digital-Document-Packaging-Signing)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Digital-Document-Packaging-Signing/pulls)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
+> 🚀 A curated list of exceptional SaaS platforms, open-source e-signature engines, and cryptographic PDF packaging tools with tamper-evident audit trails and PAdES/eIDAS compliance.
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-thebbadge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Digital-Document-Packaging-Signing"><img src="https://img.shields.io/badge/E--Signature-Ecosystem-blue.svg" alt="Ecosystem" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Digital-Document-Packaging-Signing/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 Digital document packaging and signing technologies enable organizations to prepare, dispatch, and execute legally binding electronic agreements. This ecosystem encompasses visual envelope and drag-and-drop field builders, multi-party signing order, signer identity verification, cryptographic digital signature sealing (such as PAdES, XAdES, CAdES), and tamper-evident audit trails.
 
 ---
 
-## Table of Contents
+## 📌 Table of Contents
 
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS / Hosted Platforms](#saas--hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-  - [Turnkey E-Signature Applications](#turnkey-e-signature-applications)
-  - [Cryptographic Libraries & Signing Utilities](#cryptographic-libraries--signing-utilities)
-- [Developer & Architectural Selection Guide](#developer--architectural-selection-guide)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer & Legal Notes](#disclaimer--legal-notes)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS / Hosted Platforms](#️-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [📦 Turnkey E-Signature Applications](#-turnkey-e-signature-applications)
+  - [🔐 Cryptographic Libraries & Signing Utilities](#-cryptographic-libraries--signing-utilities)
+- [🧭 Developer & Architectural Selection Guide](#-developer--architectural-selection-guide)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⭐ Star History](#-star-history)
+- [💖 Support](#-support)
+- [⚖️ Disclaimer & Legal Notes](#️-disclaimer--legal-notes)
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The global digital signature and e-signature market is valued between **$8.5 billion and $17.5 billion**, expanding at an aggressive Compound Annual Growth Rate (CAGR) of **22% to 35%** into the 2030s. Structurally, the sector has transitioned from a highly concentrated monopoly dominated by DocuSign and Adobe Acrobat Sign into a **moderately fragmented** ecosystem, driven by unbundling, open-source self-hosted alternatives, API-first embedding, and regional Qualified Trust Service Provider (QTSP) compliance mandates (such as eIDAS 2.0 in the EU).
 
 ---
 
-## SaaS / Hosted Platforms
+## ☁️ SaaS / Hosted Platforms
 
 *Commercial e-signature and document packaging platforms sorted by company scale (market capitalization / valuation in descending order).*
 
-| Product | Scale (Valuation / Revenue) | Starting Pricing Tier | Free Tier / Trial Limits | Description |
+| 🏢 Product | 📈 Scale (Valuation / Revenue) | 💳 Starting Pricing Tier | 🎁 Free Tier / Trial Limits | 📝 Description |
 |---|---|---|---|---|
 | **[Adobe Acrobat Sign](https://www.adobe.com/sign.html)** | **~$93 Billion** Market Cap (~$26B Revenue) | **$14.99/month** (Acrobat Standard, single user) or **$23.99/user/month** (Teams, billed annually) | **30-day free trial** with standard testing allowances; no permanent free sending tier (150 transactions/user/year cap on standard plans; upfront disclosure of termination fees) | Enterprise-grade document cloud integrating PDF editing, envelope workflows, and legally binding e-signatures. Bundled into Acrobat subscription tiers. |
 | **[DocuSign](https://www.docusign.com/)** | **~$15 Billion** Market Cap (~$3.36B Revenue) | **$10/month** (Personal plan, billed annually; 5 envelopes/month cap) or **$25/user/month** (Standard plan) | **30-day free trial** (capped at 5 envelope sends total, max 5 recipients/envelope); standard free account allows unlimited signing but **0 sends** | The market-share category leader in electronic signature and Intelligent Agreement Management (IAM), featuring advanced recipient authentication, custom envelope templates, and completion certificates. |
@@ -44,13 +54,13 @@ The global digital signature and e-signature market is valued between **$8.5 bil
 
 ---
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
 
 *Open-source self-hosted e-signature platforms, signing servers, and cryptographic libraries sorted by GitHub stargazer count (descending).*
 
-### Turnkey E-Signature Applications
+### 📦 Turnkey E-Signature Applications
 
-| Project | Stars | License | Tech Stack | Key Capabilities |
+| 🚀 Project | ⭐ Stars | 📜 License | 🛠️ Tech Stack | 🔍 Key Capabilities |
 |---|---|---|---|---|
 | **[DocuSeal](https://github.com/docusealco/docuseal)** | [![Stars](https://img.shields.io/github/stars/docusealco/docuseal?style=social&color=white)](https://github.com/docusealco/docuseal/stargazers) | AGPL-3.0 | Ruby on Rails 7, PostgreSQL, MinIO | Leading turnkey open-source DocuSign alternative. Features intuitive PDF drag-and-drop form builders, embeddable JS/React signing widgets, automated email/SMS reminders, unlimited envelopes/users in Community Edition, and tamper-evident audit certificates (~250 MB RAM footprint). |
 | **[Documenso](https://github.com/documenso/documenso)** | [![Stars](https://img.shields.io/github/stars/documenso/documenso?style=social&color=white)](https://github.com/documenso/documenso/stargazers) | AGPL-3.0 | TypeScript, Next.js, Prisma, Tailwind | Modern "Stripe for Signatures" web platform. Supports sequential and parallel signing orders, passkey/WebAuthn signing authentication, SHA-256 cryptographic audit logs, and embeddable React components via full REST API. |
@@ -58,9 +68,9 @@ The global digital signature and e-signature market is valued between **$8.5 bil
 | **[LibreSign](https://github.com/LibreSign/libresign)** | [![Stars](https://img.shields.io/github/stars/LibreSign/libresign?style=social&color=white)](https://github.com/LibreSign/libresign/stargazers) | AGPL-3.0 | PHP, Vue.js, Nextcloud | Fully integrated e-signature suite for Nextcloud deployments. Ideal for organizations seeking self-hosted private cloud storage with native in-place document signing without external cloud dependencies. |
 | **[Penpact](https://github.com/penpact/penpact)** | [![Stars](https://img.shields.io/github/stars/penpact/penpact?style=social&color=white)](https://github.com/penpact/penpact/stargazers) | AGPL-3.0 | TypeScript, React, Node.js | Developer-first embedded e-signature framework (early v0.1.0 development). Features AI field detection, themeable React client SDK (`@penpact/sdk`), append-only audit trail with IP/timestamps, PAdES digital signature sealing, and HMAC webhook dispatching. |
 
-### Cryptographic Libraries & Signing Utilities
+### 🔐 Cryptographic Libraries & Signing Utilities
 
-| Project | Stars | License | Language / Runtime | Focus & Architecture |
+| 🛠️ Project | ⭐ Stars | 📜 License | 🖥️ Language / Runtime | 🎯 Focus & Architecture |
 |---|---|---|---|---|
 | **[esig/dss](https://github.com/esig/dss)** | [![Stars](https://img.shields.io/github/stars/esig/dss?style=social&color=white)](https://github.com/esig/dss/stargazers) | LGPL-2.1 | Java | European Commission Digital Signature Service (DSS). Definitive reference implementation for creating, extending, and validating advanced & qualified electronic signatures compliant with eIDAS (PAdES, CAdES, XAdES, ASiC). |
 | **[open-pdf-sign](https://github.com/open-pdf-sign/open-pdf-sign)** | [![Stars](https://img.shields.io/github/stars/open-pdf-sign/open-pdf-sign?style=social&color=white)](https://github.com/open-pdf-sign/open-pdf-sign/stargazers) | Apache-2.0 | Java / CLI | Lightweight standalone command-line application and server to digitally sign PDF files with X.509 certificates, hardware security modules (HSM via PKCS#11), smart cards, and RFC 3161 timestamps. |
@@ -71,7 +81,7 @@ The global digital signature and e-signature market is valued between **$8.5 bil
 
 ---
 
-## Developer & Architectural Selection Guide
+## 🧭 Developer & Architectural Selection Guide
 
 - **Turnkey Self-Hosted Web Apps**:
   - Deploy **[DocuSeal](https://github.com/docusealco/docuseal)** for the fastest Docker-compose setup, lowest memory overhead (~250 MB), and unlimited envelopes/users.
@@ -87,7 +97,7 @@ The global digital signature and e-signature market is valued between **$8.5 bil
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
 1. Fork the repository.
 2. Add your SaaS product or open-source repository following the table format.
@@ -99,7 +109,24 @@ The global digital signature and e-signature market is valued between **$8.5 bil
 
 ---
 
-## Disclaimer & Legal Notes
+## ⭐ Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Digital-Document-Packaging-Signing&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Digital-Document-Packaging-Signing&type=date&legend=top-left)
+
+---
+
+## 💖 Support
+
+If you find this curated ecosystem list helpful, please consider showing your support:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork and contribute** to keep entries accurate and up to date.
+- 📢 **Share** with colleagues, developers, and legal tech enthusiasts.
+- ☕ **Buy me a coffee / Sponsor**: Support ongoing maintenance on the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚖️ Disclaimer & Legal Notes
 
 - This repository is a community-curated educational resource and does not constitute formal legal counsel.
 - Electronic signatures are governed by legal frameworks such as the **United States ESIGN Act (15 U.S.C. ch. 96)**, **UETA**, and the **European Union eIDAS Regulation (Regulation (EU) No 910/2014)**.
@@ -107,4 +134,6 @@ The global digital signature and e-signature market is valued between **$8.5 bil
 
 ---
 
-*Maintained by the open-source community. Star this repository to keep track of developments in digital document packaging and cryptographic signing!*
+<p align="center">
+  <sub>Maintained with ❤️ by the open-source community. Star this repository to keep track of developments in digital document packaging and cryptographic signing!</sub>
+</p>
