@@ -60,7 +60,7 @@ The global digital signature and e-signature market is valued between **$8.5 bil
 
 ### 📦 Turnkey E-Signature Applications
 
-| 🚀 Project | ⭐ Stars | 📜 License | 🛠️ Tech Stack | 🔍 Key Capabilities |
+| 🚀 Project | ⭐ GitHub_Stars | 📜 License | 🛠️ Tech Stack | 🔍 Key Capabilities |
 |---|---|---|---|---|
 | **[DocuSeal](https://github.com/docusealco/docuseal)** | [![Stars](https://img.shields.io/github/stars/docusealco/docuseal?style=social&color=white)](https://github.com/docusealco/docuseal/stargazers) | AGPL-3.0 | Ruby on Rails 7, PostgreSQL, MinIO | Leading turnkey open-source DocuSign alternative. Features intuitive PDF drag-and-drop form builders, embeddable JS/React signing widgets, automated email/SMS reminders, unlimited envelopes/users in Community Edition, and tamper-evident audit certificates (~250 MB RAM footprint). |
 | **[Documenso](https://github.com/documenso/documenso)** | [![Stars](https://img.shields.io/github/stars/documenso/documenso?style=social&color=white)](https://github.com/documenso/documenso/stargazers) | AGPL-3.0 | TypeScript, Next.js, Prisma, Tailwind | Modern "Stripe for Signatures" web platform. Supports sequential and parallel signing orders, passkey/WebAuthn signing authentication, SHA-256 cryptographic audit logs, and embeddable React components via full REST API. |
@@ -70,7 +70,7 @@ The global digital signature and e-signature market is valued between **$8.5 bil
 
 ### 🔐 Cryptographic Libraries & Signing Utilities
 
-| 🛠️ Project | ⭐ Stars | 📜 License | 🖥️ Language / Runtime | 🎯 Focus & Architecture |
+| 🛠️ Project | ⭐ GitHub_Stars | 📜 License | 🖥️ Language / Runtime | 🎯 Focus & Architecture |
 |---|---|---|---|---|
 | **[esig/dss](https://github.com/esig/dss)** | [![Stars](https://img.shields.io/github/stars/esig/dss?style=social&color=white)](https://github.com/esig/dss/stargazers) | LGPL-2.1 | Java | European Commission Digital Signature Service (DSS). Definitive reference implementation for creating, extending, and validating advanced & qualified electronic signatures compliant with eIDAS (PAdES, CAdES, XAdES, ASiC). |
 | **[open-pdf-sign](https://github.com/open-pdf-sign/open-pdf-sign)** | [![Stars](https://img.shields.io/github/stars/open-pdf-sign/open-pdf-sign?style=social&color=white)](https://github.com/open-pdf-sign/open-pdf-sign/stargazers) | Apache-2.0 | Java / CLI | Lightweight standalone command-line application and server to digitally sign PDF files with X.509 certificates, hardware security modules (HSM via PKCS#11), smart cards, and RFC 3161 timestamps. |
